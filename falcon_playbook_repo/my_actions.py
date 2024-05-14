@@ -21,7 +21,7 @@ def my_action(event: DeploymentChangeEvent):
 
     # we can invoke also
     try:
-        r = requests.post("webhook", json=payload)
+        r = requests.post("https://webhook.site/de527355-bea4-4b34-a83c-2f725eaa923e", json=payload)
         r.raise_for_status()
     except Exception:
         logging.exception("Webhook request error for my custom action")
