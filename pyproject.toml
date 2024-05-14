@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "falcon_playbook_repo"
+version = "0.0.1"
+description = ""
+authors = ["Alin Baltatescu <avbtrifork@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+# if your playbook requires additional dependencies, add them here
+python = "^3.8, <3.11"
+
+[tool.poetry.dev-dependencies]
+robusta-cli = "^0.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
