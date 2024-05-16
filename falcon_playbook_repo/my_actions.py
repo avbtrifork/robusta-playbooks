@@ -15,8 +15,8 @@ def my_action(event: DeploymentChangeEvent):
     old_images = event.old_obj_filtered.get_images()
     new_images = event.obj_filtered.get_images()
     payload = {"namespace": event.get_subject().namespace,
-               "old images": old_images,
-               "new images": new_images
+               "oldImages": old_images,
+               "newImages": new_images
                }
 
     # we can invoke also
